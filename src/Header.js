@@ -17,7 +17,7 @@ const Header = ({
 				<nav>
 					{navItems.map((items, index) => {
 						return (
-							<li key={index} onClick={handleClick(items)}>
+							<li key={index} onClick={() => handleClick(items)}>
 								{items}
 							</li>
 						);
