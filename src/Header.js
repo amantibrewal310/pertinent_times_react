@@ -7,8 +7,8 @@ const Header = ({
 	navItems = ['nav-items-1', 'nav-items-2'],
 }) => {
 	let history = useHistory();
-	function handleClick() {
-		history.push('/news/world');
+	function handleClick(items) {
+		history.push(`/news/${items}`);
 	}
 	return (
 		<>
@@ -17,7 +17,7 @@ const Header = ({
 				<nav>
 					{navItems.map((items, index) => {
 						return (
-							<li key={index} onClick={handleClick}>
+							<li key={index} onClick={handleClick(items)}>
 								{items}
 							</li>
 						);

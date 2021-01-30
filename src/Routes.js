@@ -5,6 +5,8 @@ const Routes = () => {
 	return (
 		<Router>
 			<Switch>
+				<Route exact path='/' component={News}></Route>
+
 				<Route exact path='/news/:query' component={News}></Route>
 			</Switch>
 		</Router>

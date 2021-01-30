@@ -8,7 +8,8 @@ const News = () => {
 	const API = 'C6FFBf5DDNApcPwYuKwbWqfppX4AZVxY';
 
 	useEffect(() => {
-		let query = params['query'];
+		let query = '';
+		query = params?.query;
 		console.log(query);
 		let url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${query}&api-key=${API}`;
 		fetch(url)
