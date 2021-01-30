@@ -1,0 +1,9 @@
+.news_article {
+	display: flex;
+	padding: 0.8rem;
+	margin-top: 1rem;
+	border: 1px solid;
+	padding: 10px;
+	box-shadow: 5px 10px #888888;
+	justify-content: space-between;
+}
