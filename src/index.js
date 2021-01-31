@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import './index.css';
 // import App from './App';
@@ -8,24 +9,26 @@ import Routes from './Routes';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Header
-			title='Pertinent Times'
-			navItems={[
-				'Home',
-				'World',
-				'Politics',
-				'Magazine',
-				'Technology',
-				'Science',
-				'Health',
-				'Sports',
-				'Arts',
-				'Fashion',
-				'Food',
-				'Travel',
-			]}
-		/>
-		<Routes />
+		<Router>
+			<Header
+				title='Pertinent Times'
+				navItems={[
+					'Home',
+					'World',
+					'Politics',
+					'Magazine',
+					'Technology',
+					'Science',
+					'Health',
+					'Sports',
+					'Arts',
+					'Fashion',
+					'Food',
+					'Travel',
+				]}
+			/>
+			<Routes />
+		</Router>
 	</React.StrictMode>,
 	document.getElementById('root')
 );
